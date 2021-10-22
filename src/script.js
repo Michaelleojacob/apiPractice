@@ -1,9 +1,10 @@
-const apiKey = '6f7162b3707366bc6e23b2888f875c1b';
+const key = process.env.apikey;
+
 const city = 'san diego';
 
 // URL (required), options (optional)
 fetch(
-  `https://api.openweathermap.org/data/2.5/weather?q=${city}&APPID=${apiKey}`,
+  `https://api.openweathermap.org/data/2.5/weather?q=${city}&APPID=${key}`,
   { mode: 'cors' }
 )
   .then((response) => {
