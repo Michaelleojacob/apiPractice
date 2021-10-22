@@ -1,6 +1,5 @@
 const apiKey = '6f7162b3707366bc6e23b2888f875c1b';
 const city = 'san diego';
-// http://api.openweathermap.org/data/2.5/weather?q=London&APPID=6f7162b3707366bc6e23b2888f875c1b
 
 // URL (required), options (optional)
 fetch(
