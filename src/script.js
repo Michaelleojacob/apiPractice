@@ -2,6 +2,10 @@ const key = process.env.apikey;
 
 const city = 'san diego';
 
+const myfunc = (data) => {
+  console.log(data.timezone);
+};
+
 // URL (required), options (optional)
 fetch(
   `https://api.openweathermap.org/data/2.5/weather?q=${city}&APPID=${key}`,
@@ -17,6 +21,7 @@ fetch(
   })
   .then((response) => {
     console.log(response);
+    myfunc(response);
   })
   .catch((err) =>
     // Error :(
